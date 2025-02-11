@@ -1,0 +1,145 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+  }
+  body {
+    margin: 0;
+  }
+  
+  header a {
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+  section {
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+  }
+  .section-text,
+  .section-image {
+    flex: 1;
+  }
+  .section-image img {
+    width: 100%;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  
+  form input {
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+  form input[type="email"] {
+    border: 1px solid black;
+  }
+  /* pseudo elements and pseudo classes - hover */
+  form input::placeholder {
+    color: gray;
+  }
+  form input[type="submit"] {
+    border: none;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    padding: 8px 30px;
+  }
+  /* section productive */
+  #productive {
+    background-color: hsl(240, 75%, 98%);
+  }
+  #curved-bg {
+    height: 70px;
+    background-image: url("./images/bg-curve-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+  
+  #card {
+    background-color: white;
+    width: 65%;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+    /* box-shadow: 0px 0px 8px gray; */
+    box-shadow: 0px 0px 15px gray;
+  }
+  #profile {
+    display: flex;
+    align-items: center;
+  }
+  #profile img {
+    width: 60px;
+    border-radius: 30px;
+  }
+  #profile p {
+    margin: 5px;
+  }
+  #profile p:first-child {
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  
+  #earlyaccess {
+    background-color: hsl(238, 22%, 44%);
+    color: white;
+    gap: 30px;
+  }
+  #earlyaccess form {
+    flex: 1;
+  }
+  
+  #earlyaccess form input[type="email"] {
+    display: block;
+    width: 70%;
+    margin-bottom: 10px;
+  }
+  
+  /* footer */
+  footer {
+    background-color: hsl(243, 87%, 12%);
+    color: white;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  /* media queries */
+  
+  @media (max-width: 650px) {
+    /* screens whose width is below 650px  */
+    section,
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+    #intro,
+    #productive {
+      flex-direction: column-reverse;
+    }
+    section,
+    header,
+    footer {
+      padding: 10px 20px;
+    }
+    header img {
+      height: 25px;
+    }
+    input {
+      display: block;
+      width: 80%;
+      margin: 10px auto;
+    }
+  }
